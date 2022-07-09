@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-1: 'IM Fell DW Pica', sans-serif;
+
+  --bg-color1: #7e5c43;
+  --bg-color2: #f4f4f4;
+
+  --bd-color1: #787a6c;
+
+  --fc-1: #f0f0f0;
+  --fc-2: #67230e;
+  --fc-3: #070b0c;
+  --fc-4: #c27251;
+}
+
+body {
+  font-family: var(--ff-1);
+  background: var(--bg-color1);
+}
+
+#lyric-box {
+  max-width: 80%;
+  background: var(--bg-color2);
+  border: 20px solid var(--bd-color1);
+  width: 60rem;
+  margin: 10rem auto;
+  padding: 15px;
+}
+
+#text {
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--fc-2);
+  margin-bottom: 1.5rem;
+  text-transform: lowercase;
+}
+
+#author, #album, #song {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  color: var(--fc-3);
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.social-media a {
+  margin-right: 0.5rem;
+  background: var(--bg-color1);
+  color: var(--fc-1);
+  padding: 0.3rem 0.5rem;
+  text-decoration: none;
+  border-radius: 10%;
+  transition: ease 0.3s;
+}
+
+.social-media .icon {
+  width: 1.5rem;
+}
+
+.social-media a:hover {
+  opacity: 0.8;
+}
+
+.social-media a:active {
+  background: var(--fc-4);
+}
+
+#new-lyrics {
+  font-family: var(--ff-1);
+  background: var(--bg-color1);
+  border: none;
+  color: var(--bg-color2);
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+
+#new-lyrics:hover {
+  opacity: 0.8;
+}
+
+#new-lyrics:active {
+  background: var(--fc-4);
+}
