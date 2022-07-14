@@ -1,12 +1,16 @@
 import './App.css';
 import Quotes from './components/Quotes';
-/* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'; */
+import Footer from './components/Footer';
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
     <div className="App">
-      <h1><Quotes /></h1>
+      <Helmet>
+        <title>Taylor Swift Lyrics Generator</title>
+      </Helmet>
+      <Quotes/>
+      <Footer></Footer>
     </div>
   );
 }

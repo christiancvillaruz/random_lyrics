@@ -36,11 +36,11 @@ const Quotes = () => {
       <div id="text">
         <p>{lyrics}</p>
       </div>
-      <div id="author">
-        <p>Taylor Swift</p>
-      </div>
       <div id="song">
         <p>{song}</p>
+      </div>
+      <div id="author">
+        <p>Taylor Swift</p>
       </div>
       <div id="album">
         <p>From the album "{album}"</p>
